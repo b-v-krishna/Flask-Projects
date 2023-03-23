@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Results of matched strings</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h3>Results that matches with the Text:</h3>
+    {% if matches_found %}
+ <ol>
+    {% for i in matches_found %}
+        <b> {{ i }} </b>
+    {% endfor %}
+ </ol>
+ {% else %}
+ <p>No Matches</p>
+          
+{% endif %}
+    </body>
+</html>
