@@ -8,3 +8,8 @@ It asks the user to enter a test string and a regular expression. Upon the click
 
 Output screens:
 
+<div>
+ <img src="https://github.com/b-v-krishna/Flask-Projects/blob/master/Rgex%20web%20app/static/Screenshot%202023-03-23%20232242.png" width="1000", height="400">
+ <img src="https://github.com/b-v-krishna/Flask-Projects/blob/master/Rgex%20web%20app/static/Screenshot%202023-03-23%20232255.png" width="1000", height="400">
+ </div>
+
