@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking App</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <h1>Note Taking App</h1>
 
+    <form action="/" method="post">
+        <input type="text" class='note' name="note" placeholder="Enter a note"><br>
+        <div>
+            <input type="submit" name="note" value="Add Note">
+            <input type="submit" name="remove" value="Remove">
+            <input type="submit" name="clear" value="Clear">
+        </div>
+        
+    </form>
+     
+    <ul>
+    {% for note in notes %}
+        <li>{{ note }} </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
