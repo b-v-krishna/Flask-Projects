@@ -1,12 +1,12 @@
 import streamlit as st
+import os
 from PIL import Image
 
 st.set_page_config(page_title="Bhanu's Profile", page_icon=":smiley:")
 
-
-profile_pic = Image.open('resources/images/pic.jpg')
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+profile_pic = Image.open(os.path.join(BASE_DIR, 'resources/images/pic.jpg'))
 st.image(profile_pic, width=500)
-
 
 st.title('Welcome to my Profile')
 st.header("Hi, :blue[I'm Bhanu.]")
