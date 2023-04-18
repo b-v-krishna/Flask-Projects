@@ -13,7 +13,7 @@ Categorical features were encoded using one-hot encoding, which converts categor
 Numerical columns were standardized using StandardScaler, which scales the numerical features so that they have a mean of 0 and standard deviation of 1. This helps in making the data less sensitive to the scale of the features, thus improving the performance of the model.
 
 <h2>Exploratory Data Analysis</h2>
-In this step,I have visualized the data using various plots to analyze the data and to understand the relationships between different features and the targetvariable. I have used the Seaborn library to visualize the relationship between MRP (target variable) and different features. 
+In this step,I have visualized the data using various plots to analyze the data and to understand the relationships between different features and the targetnvariable. I have used the Seaborn library to visualize the relationship between MRP (target variable) and different features. 
 
 <h2>Model Training</h2>
 In this step, split the preprocessed data into train and test sets with a 80-20 split ratio. Then, I trained a Random Forest Regressor model on the training set using the scikit-learn library. Random Forest Regressor is an ensemble machine learning algorithm that combines multiple decision trees to make predictions. It is a popular choice for regression tasks because it can handle non-linear relationships and does not require much tuning.
@@ -21,13 +21,6 @@ In this step, split the preprocessed data into train and test sets with a 80-20 
 <h2>Deployment</h2>
 In this step, I deployed the trained model using Streamlit .I have created a web interface where users can input the laptop features and get the price prediction. The interface is user-friendly and easy to use. The application takes input features from the user such as OS, storage, RAM size and type, brand, processor, display size, and predicts the MRP of the laptop.
 
-<h2>Requirements</h2>
-Python 3.x
-scikit-learn
-pandas
-numpy
-seaborn
-streamlit
 
 <h2>How to use this project</h2>
 -> Clone the repository<br>
