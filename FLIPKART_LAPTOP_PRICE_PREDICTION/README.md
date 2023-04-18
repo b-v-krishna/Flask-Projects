@@ -21,6 +21,8 @@ In this step, split the preprocessed data into train and test sets with a 80-20 
 <h2>Deployment</h2>
 In this step, I deployed the trained model using Streamlit .I have created a web interface where users can input the laptop features and get the price prediction. The interface is user-friendly and easy to use. The application takes input features from the user such as OS, storage, RAM size and type, brand, processor, display size, and predicts the MRP of the laptop.
 
+You can acess the app using this link: 👉: https://b-v-krishna-innomat-flipkart-laptop-price-predictionhome-96rzh0.streamlit.app/price
+
 
 <h2>How to use this project</h2>
 -> Clone the repository<br>
