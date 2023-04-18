@@ -10,8 +10,8 @@ from PIL import Image
 st.set_page_config(page_title='Laptop Price Prediction App')
 
 
-data_path = os.path.join(os.path.dirname(__file__), 'resources', 'data', 'laptop.csv')
-image_path = os.path.join(os.path.dirname(__file__), 'resources', 'images', 'laptop.jpg')
+data_path = os.path.join(os.path.dirname(__file__), 'resources/data/laptop.csv')
+image_path = os.path.join(os.path.dirname(__file__), 'resources/images/laptop.jpg')
 
 
 df = pd.read_csv('datapath')
