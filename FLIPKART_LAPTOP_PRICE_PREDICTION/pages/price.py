@@ -10,7 +10,7 @@ import os
 
 st.set_page_config(page_title='Laptop Price Prediction App')
 
-data_path = os.path.join(os.path.dirname(__file__), 'resources/data/laptop.csv')
+data_path = '/home/user/innomatics-intern-tasks/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/data/laptop.csv'
 image_path = os.path.join(os.path.dirname(__file__), 'resources/images/laptop.jpg')
 
 
