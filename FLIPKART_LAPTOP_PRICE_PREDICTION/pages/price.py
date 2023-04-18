@@ -10,12 +10,11 @@ import os
 
 st.set_page_config(page_title='Laptop Price Prediction App')
 
-
 data_path = os.path.join(os.path.dirname(__file__), 'resources/data/laptop.csv')
 image_path = os.path.join(os.path.dirname(__file__), 'resources/images/laptop.jpg')
 
 
-df = pd.read_csv('datapath')
+df = pd.read_csv(data_path)
 X = df.drop('MRP', axis=1)
 y = df['MRP']
 
@@ -66,4 +65,4 @@ if st.button('Predict laptop price'):
     y_pr = round(np.exp(rfr.predict(X_test_pr))[0])
     st.markdown('Predicted price is <span style="color: red; font-size: 25px;">' + str(y_pr) + ' INR</span>', unsafe_allow_html=True)
 
-    st.image(Image.open('image_path'),width=270)
+    st.image(Image.open(image_path),width=270)
