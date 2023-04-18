@@ -15,15 +15,20 @@ FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
 dir_of_interest = os.path.join(PARENT_DIR, "resources")
+DATA_PATH = os.path.join(dir_of_interest, "data", "laptop.csv")
 
 
-data_path = os.path.join(dir_of_interest, "data", "laptop.csv")
+
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+# absolute path to this file's root directory
+PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+# absolute path of directory_of_interest
+dir_of_interest = os.path.join(PARENT_DIR, "resources")
+IMAGE_PATH = os.path.join(dir_of_interest, "images", "laptop.jpg")
 
 
-image_path = os.path.join(os.path.dirname(__file__), 'resources/images/laptop.jpg')
 
-
-df = pd.read_csv(data_path)
+df = pd.read_csv(DATA_PATH)
 X = df.drop('MRP', axis=1)
 y = df['MRP']
 
@@ -73,4 +78,4 @@ X_test_pr = preprocessor.transform(X_test)
 if st.button('Predict laptop price'):
     y_pr = round(np.exp(rfr.predict(X_test_pr))[0])
     st.markdown('Predicted price is <span style="color: red; font-size: 25px;">' + str(y_pr) + ' INR</span>', unsafe_allow_html=True)
-st.image(Image.open(image_path),width=270)
+st.image(Image.open(IMAGE_PATH),width=270)
