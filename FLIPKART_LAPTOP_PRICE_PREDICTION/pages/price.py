@@ -5,6 +5,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.ensemble import RandomForestRegressor
 from PIL import Image
+import os
 
 
 st.set_page_config(page_title='Laptop Price Prediction App')
