@@ -64,5 +64,4 @@ X_test_pr = preprocessor.transform(X_test)
 if st.button('Predict laptop price'):
     y_pr = round(np.exp(rfr.predict(X_test_pr))[0])
     st.markdown('Predicted price is <span style="color: red; font-size: 25px;">' + str(y_pr) + ' INR</span>', unsafe_allow_html=True)
-
-    st.image(Image.open(image_path),width=270)
+st.image(Image.open(image_path),width=270)
