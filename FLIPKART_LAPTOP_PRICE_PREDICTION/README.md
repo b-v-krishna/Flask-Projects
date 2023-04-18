@@ -29,8 +29,7 @@ In this step, I deployed the trained model using Streamlit .I have created a web
 
 <h2>Output screen Images</h2>
 
-<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223523.png'>
+<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223523.png' width="900" style="display: block; margin: auto;">
 <br>
-<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223539.png'>
-
+<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223539.png' width="700" style="display: block; margin: auto;">
 
