@@ -9,7 +9,12 @@ from PIL import Image
 
 st.set_page_config(page_title='Laptop Price Prediction App')
 
-df = pd.read_csv('resources\data\laptop.csv')
+
+data_path = os.path.join(os.path.dirname(__file__), 'resources', 'data', 'laptop.csv')
+image_path = os.path.join(os.path.dirname(__file__), 'resources', 'images', 'laptop.jpg')
+
+
+df = pd.read_csv('datapath')
 X = df.drop('MRP', axis=1)
 y = df['MRP']
 
@@ -60,4 +65,4 @@ if st.button('Predict laptop price'):
     y_pr = round(np.exp(rfr.predict(X_test_pr))[0])
     st.markdown('Predicted price is <span style="color: red; font-size: 25px;">' + str(y_pr) + ' INR</span>', unsafe_allow_html=True)
 
-    st.image(Image.open('resources\images\laptop.jpg'),width=270)
+    st.image(Image.open('image_path'),width=270)
