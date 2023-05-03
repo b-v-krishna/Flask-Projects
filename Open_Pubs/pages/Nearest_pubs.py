@@ -5,12 +5,28 @@ import folium
 from folium import Marker
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
+import os
 
 st.set_page_config(layout="centered")
+
+
+
 st.image('resources/images/2.jpg', use_column_width=True)
 
 
-pub_data=pd.read_csv('resources/data/pub_df.csv')
+
+
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+# absolute path to this file's root directory
+PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+# absolute path of directory_of_interest
+dir_of_interest = os.path.join(PARENT_DIR, "resources")
+
+
+DATA_PATH = os.path.join(dir_of_interest, "data", "pub_df.csv")
+
+pub_data=pd.read_csv(DATA_PATH)
+
 
 
 st.markdown("<h1 style='text-align: center; color: #EB6864; font-weight: bold;'>🍺 Open Pubs Application 🍻</h1>", unsafe_allow_html=True)
