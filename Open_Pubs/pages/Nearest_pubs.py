@@ -11,8 +11,12 @@ from PIL import Image
 st.set_page_config(layout="centered")
 
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-pic = Image.open(os.path.join(BASE_DIR, 'resources/images/2.jpg'))
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+# absolute path to this file's root directory
+PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+# absolute path of directory_of_interest
+dir_of_interest = os.path.join(PARENT_DIR, "resources")
+pic = os.path.join(dir_of_interest, "images", "2.jpg")
 st.image(pic, width=700)
 
 
