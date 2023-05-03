@@ -2,6 +2,7 @@ import folium
 import pandas as pd
 import streamlit as st
 from streamlit_folium import folium_static
+import os
 
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
