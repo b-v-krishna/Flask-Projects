@@ -16,7 +16,7 @@ FILE_DIR = os.path.dirname(os.path.abspath(__file__))
 PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
 # absolute path of directory_of_interest
 dir_of_interest = os.path.join(PARENT_DIR, "resources")
-DATA_PATH = os.path.join(dir_of_interest, "data", "IMDb_Data_final.csv")
+DATA_PATH = os.path.join(dir_of_interest, "data", "pub_df.csv")
 
 pub_df=pd.read_csv(DATA_PATH)
 
