@@ -6,14 +6,14 @@ from folium import Marker
 from folium.plugins import MarkerCluster
 from streamlit_folium import folium_static
 import os
+from PIL import Image
 
 st.set_page_config(layout="centered")
 
 
-
-st.image('resources/images/2.jpg', use_column_width=True)
-
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+pic = Image.open(os.path.join(BASE_DIR, 'resources/images/2.jpg'))
+st.image(pic, width=700)
 
 
 FILE_DIR = os.path.dirname(os.path.abspath(__file__))
