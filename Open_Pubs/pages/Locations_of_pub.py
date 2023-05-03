@@ -3,8 +3,13 @@ import pandas as pd
 import streamlit as st
 from streamlit_folium import folium_static
 
-# Load the dataset
-data=pd.read_csv('resources/data/pub_df.csv')
+
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.join(FILE_DIR, os.pardir)
+dir_of_interest = os.path.join(PARENT_DIR, "resources")
+DATA_PATH = "/app/innomatics-intern-tasks/Open_Pubs/resources/data/pub_df.csv"
+
+data=pd.read_csv(DATA_PATH)
 
 # Create the Pub Locations Page
 def location():
