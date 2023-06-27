@@ -29,9 +29,4 @@ You can acess the app using this link: 👉: https://b-v-krishna-innomat-flipkar
 -> Install the required libraries using pip install -r requirements.txt<br>
 -> Run the app using streamlit run app.py<br>
 
-<h2>Output screen Images</h2>
-
-<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223523.png'  style="display: block; margin: auto;">
-<br>
-<img src='https://github.com/b-v-krishna/INNOMATICS-INTERN-TASKS/blob/master/FLIPKART_LAPTOP_PRICE_PREDICTION/resources/images/Screenshot%202023-04-18%20223539.png'  style="display: block; margin: auto;">
 
